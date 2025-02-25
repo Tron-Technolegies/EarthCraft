@@ -1,0 +1,28 @@
+.navbar {
+  height: 12vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.nav_left_side img {
+  height: 12vh;
+}
+.nav_menus ul {
+  display: flex;
+  gap: 2.5rem;
+  font-family: "playfair display", serif;
+  font-size: larger;
+  font-weight: 300;
+  color: #6c6a3d;
+}
+.nav_rightside{
+    display: flex;
+    gap: 2.5rem;
+}
+
+
+
+

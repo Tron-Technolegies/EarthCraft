@@ -1,0 +1,28 @@
+.about_section_left_side img {
+  height: 50vh;
+  width: 80%;
+  border-radius: 15px;
+}
+.aboutsection {
+  display: flex;
+  justify-content: space-around;
+}
+.about_section_left_side {
+  width: 50%;
+  margin-left: 10%;
+}
+.about_section_right_side {
+  width: 39%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.about_section_right_side h2{
+    font-size: 45px;
+}
+.about_section_right_side p{
+    font-size: 20px;
+    line-height: 1.4em;
+}
