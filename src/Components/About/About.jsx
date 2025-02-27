@@ -1,15 +1,16 @@
 import React from "react";
 import "../About/About.css";
 import aboutsectionimage from "../../assets/aboutsectionimage.jpg";
+
 const About = () => {
   return (
     <div className="aboutsection">
       <div className="about_section_left_side">
-        <img src={aboutsectionimage} alt="" srcset="" />
+        <img src={aboutsectionimage} alt="About Caletal developers" />
       </div>
-
+      
       <div className="about_section_right_side">
-        <h2>About Us</h2>
+        <h2>About us</h2>
         <p>
           Caletal developers always have the solution when it comes to creating
           grandeur in architectural plans and structures. A team of professional
@@ -20,9 +21,12 @@ const About = () => {
           proportional, and most importantly we do not compromise on the quality
           of our projects.
         </p>
-        <button onclick="window.location.href='https://calatal.com'">Know More</button>
-
+        <button className="about_know_more_btn" onClick={() => window.location.href='https://caletal.com/'}>
+          Know More
+        </button>
+       
       </div>
+     
     </div>
   );
 };

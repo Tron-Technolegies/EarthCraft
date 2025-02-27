@@ -1,0 +1,147 @@
+/* TestimonialsSection.css */
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    /* font-family: Arial, sans-serif; */
+  }
+  
+  .testimonials-heading {
+    color: #6c6a3d;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  
+  .testimonials-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-content {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 800px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .author-info {
+    margin-top: 20px;
+  }
+  
+  .author-name {
+    color: #c6a95c;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  
+  .author-title {
+    color: #555;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: 1px solid #c6a95c;
+    color: #c6a95c;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .nav-button:hover {
+    background-color: #c6a95c;
+    color: white;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #c6a95c;
+  }
+  .testimonials_hr{
+    margin-top: 2%;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .testimonials-heading {
+      font-size: 1.8rem;
+    }
+    
+    .testimonials-carousel {
+      flex-direction: column;
+    }
+    
+    .testimonial-text {
+      font-size: 0.9rem;
+    }
+    
+    .author-name {
+      font-size: 1.2rem;
+    }
+    
+    .nav-button {
+      margin: 10px 0;
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonials-heading {
+      font-size: 1.5rem;
+    }
+    
+    .testimonial-text {
+      font-size: 0.85rem;
+    }
+    
+    .author-name {
+      font-size: 1.1rem;
+    }
+    
+    .author-title {
+      font-size: 0.9rem;
+    }
+    
+    .nav-button {
+      width: 30px;
+      height: 30px;
+    }
+  }

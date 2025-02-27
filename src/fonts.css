@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'CatalinaRayden';
+    src: url('./assets/fonts/Catalina Rayden.ttf') format('truetype'),
+         url('./assets/fonts/Catalina Rayden.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'CatalinaRayden', sans-serif;
+  }
+  

@@ -10,7 +10,7 @@ const Projects = () => {
       id: 1,
       image: thomsoncasa,
       location: "Thrissur, Kerala",
-      title: "THOMSONS CASA",
+      title: "Thomson Casa",
     },
     {
       id: 2,
@@ -25,17 +25,22 @@ const Projects = () => {
       title: "Thottam",
     },
     {
-      id: 3,
-      image: thottam,
+      id: 4,
+      image: thomsoncasa,
       location: "Mumbai, Maharashtra",
       title: "Zaitoon Restaurant",
     },
-    ,
     {
-      id: 3,
-      image: thottam,
+      id: 5,
+      image: zaitoon,
       location: "Mumbai, Maharashtra",
       title: "Zaitoon Restaurant",
+    },
+    {
+      id: 6,
+      image: thomsoncasa,
+      location: "Chennai, TamilNadu",
+      title: "Thomson Casa",
     }
   ];
 
@@ -51,14 +56,16 @@ const Projects = () => {
       <div className="featured_products_content">
         <h2>Featured Projects</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ex{" "}
-          <br />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ex
           dignissimos eaque doloremque? Ex cupiditate tenetur pariatur sunt,
           atque laudantium.
         </p>
-        <button href="https://caletal.com/">SEE ALL PROJECTS</button>
+        <button className="viewallproducts" onClick={() => window.location.href = 'https://caletal.com/'}>
+          SEE ALL PROJECTS
+        </button>
       </div>
-
+      
+      {/* No space or line break between these divs */}
       <div className="design-showcase">
         <div className="showcase-container">
           {projects.map((project) => (
@@ -73,7 +80,6 @@ const Projects = () => {
               <div className="project-info">
                 <p className="project-location">{project.location}</p>
                 <h2 className="project-title">{project.title}</h2>
-                {/* <hr /> */}
               </div>
             </div>
           ))}
