@@ -48,24 +48,24 @@ const Projects = () => {
     <div className="projectssection">
       <div className="projectsection_main_content">
         <h2>
-          Leading global construction company, building excellence and
+          A Leading global construction company, building excellence and
           transforming skylines since 2014.
         </h2>
       </div>
 
       <div className="featured_products_content">
-        <h2>Featured Projects</h2>
+        <h2>Upcoming Projects</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ex
           dignissimos eaque doloremque? Ex cupiditate tenetur pariatur sunt,
           atque laudantium.
         </p>
-        <button className="viewallproducts" onClick={() => window.location.href = 'https://caletal.com/'}>
+        <button className="viewallproducts" onClick={() => window.location.href = 'https://caletal.com/d2b-projects/'}>
           SEE ALL PROJECTS
         </button>
       </div>
       
-      {/* No space or line break between these divs */}
+
       <div className="design-showcase">
         <div className="showcase-container">
           {projects.map((project) => (

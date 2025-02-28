@@ -40,9 +40,9 @@ const Popupform = () => {
 
   return (
     <div>
-      <button className="popup-trigger-button" onClick={() => setIsOpen(true)}>
+      {/* <button className="popup-trigger-button" onClick={() => setIsOpen(true)}>
         Contact Us
-      </button>
+      </button> */}
 
       {isOpen && (
         <div className="popup-overlay">

@@ -20,9 +20,10 @@ const App = () => {
       <section id="projects"><Projects /></section>
       <section id="about"><About /></section>
       <section id="services"><Services /></section>
-      <section id="contact"><Contact /></section>
+      
       <Testimonials />
       <Faq />
+      <section id="contact"><Contact /></section>
       <WhatsApp />
       <Footer />
     </>

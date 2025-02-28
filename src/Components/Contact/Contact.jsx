@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import "../Contact/Contact.css";
 import Popupform from "../PopupForm/PopupForm";
 
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -23,7 +18,7 @@ const Contact = () => {
     e.preventDefault();
     const { name, email, phone, message } = formData;
 
-    const phoneNumber = "+959139711107";
+    const phoneNumber = "+919139711107";
     const whatsappMessage = `Hello, I want to contact you!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -41,53 +36,21 @@ const Contact = () => {
 
   return (
     <div className="contact_container">
-      <h1 className="contact_heading">GET IN TOUCH</h1>
+      <h1 className="contact_heading">Get in touch</h1>
       <div className="contact_content">
-        <div className="contact_info">
-          <div className="info_card">
-            <div className="info_icon">
-            <FaLocationDot color="#ffffff" size={28} />
-            </div>
-            <div className="info_details">
-              <h3>Our Location</h3>
-              <p>Guruvayur, Kerala, India</p>
-            </div>
-          </div>
-          
-          <div className="info_card">
-            <div className="info_icon">
-            <FaPhoneVolume color="#ffffff" size={28} />
-            </div>
-            <div className="info_details">
-              <h3>Phone Number</h3>
-              <p>+91 913 971 1107</p>
-            </div>
-          </div>
-          
-          <div className="info_card">
-            <div className="info_icon">
-            <MdEmail color="#ffffff" size={28}/>
-            </div>
-            <div className="info_details">
-              <h3>Email Address</h3>
-              <p>contact@example.com</p>
-            </div>
-          </div>
-          
-          <div className="map_container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31374.170825816866!2d76.02025711400262!3d10.597041680610694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba79461cd1b5745%3A0x96c6ecd0de2d2b4!2sGuruvayur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1738643236938!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="location-map"
-            />
-          </div>
+        <div className="map_container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31374.170825816866!2d76.02025711400262!3d10.597041680610694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba79461cd1b5745%3A0x96c6ecd0de2d2b4!2sGuruvayur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1738643236938!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="location-map"
+          />
         </div>
-        
+
         <div className="contact_form_container">
           <h2>Send us a message</h2>
           <form onSubmit={handleSubmit} className="contact_form">
@@ -103,7 +66,7 @@ const Contact = () => {
                 required
               />
             </div>
-            
+
             <div className="form_group">
               <label htmlFor="email">Email</label>
               <input
@@ -116,7 +79,7 @@ const Contact = () => {
                 required
               />
             </div>
-            
+
             <div className="form_group">
               <label htmlFor="phone">Phone</label>
               <input
@@ -131,7 +94,7 @@ const Contact = () => {
                 title="Please enter a valid phone number"
               />
             </div>
-            
+
             <div className="form_group">
               <label htmlFor="message">Message</label>
               <textarea
@@ -143,7 +106,7 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            
+
             <button type="submit" className="submit_btn">
               <i className="fab fa-whatsapp"></i> Send via WhatsApp
             </button>

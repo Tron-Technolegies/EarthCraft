@@ -35,8 +35,9 @@
 }
 
 .about_section_right_side h2 {
-  font-size: 2.5rem;
-  color: #6c6a3d;
+  font-size: 2.2rem;
+  font-weight: 400;
+    color: #6c6a3d;
   margin: 0;
 }
 
@@ -63,7 +64,7 @@
   color: white;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries  */
 @media screen and (max-width: 992px) {
   .aboutsection {
     padding: 3rem 1rem;
