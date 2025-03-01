@@ -40,7 +40,7 @@ const Contact = () => {
       <div className="contact_content">
         <div className="map_container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31374.170825816866!2d76.02025711400262!3d10.597041680610694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba79461cd1b5745%3A0x96c6ecd0de2d2b4!2sGuruvayur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1738643236938!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.9093539939904!2d76.2406105751193!3d10.5078055896251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7efb0cae0b6d1%3A0x3a52b9b7fd27e29e!2sCaletal%20Developers!5e0!3m2!1sen!2sin!4v1740803752110!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             width="100%"
             height="100%"
             style={{ border: 0 }}

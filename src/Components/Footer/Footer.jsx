@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="footer_contact_info">
             <div className="footer_info_item">
               <FaLocationDot className="footer_icon" />
-              <p>Guruvayur, Kerala, India</p>
+              <p>Thrissur, Kerala, India</p>
             </div>
             <div className="footer_info_item">
               <FaPhoneVolume className="footer_icon" />
