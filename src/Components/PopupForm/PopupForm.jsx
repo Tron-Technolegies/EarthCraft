@@ -6,7 +6,7 @@ const Popupform = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "", // Added phone field
+    phone: "", 
     message: "",
   });
 

@@ -63,9 +63,10 @@
   text-align: center;
   margin-top: 15px;
   font-size: 24px;
+  font-weight: 400;
 }
 
-/* Responsive breakpoints */
+/* media queries */
 @media (max-width: 992px) {
   .servicesections_heading h1 {
     font-size: 36px;

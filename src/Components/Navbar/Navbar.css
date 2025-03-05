@@ -8,7 +8,7 @@
   align-items: center;
   cursor: pointer;
   position: relative;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -16,12 +16,13 @@
 .nav_left_side img {
   height: 12vh;
   max-height: 70px;
+  margin: 0;
 }
 
 /* Navigation menu */
 .nav_menus ul {
   display: flex;
-  gap: 2.5rem;
+  gap: 0;
   font-family: "CatalinaRayden", sans-serif;
   font-size: larger;
   font-weight: 300;
@@ -32,6 +33,7 @@
 }
 
 .nav_menus ul li {
+  margin: 0 5px;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -71,11 +73,14 @@
 /* Right side icons */
 .nav_rightside {
   display: flex;
-  gap: 2.5rem;
+  gap: 0;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav_rightside li {
+  margin: 0 5px;
   transition: transform 0.3s ease;
 }
 
@@ -87,42 +92,55 @@
 .mobile_menu_toggle {
   display: none;
   z-index: 1000;
+  margin: 0;
 }
-.nav_contact{
+
+.nav_contact {
   background-color: #cd8636;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  margin: 0;
 }
+
 /* Responsive styles */
 @media screen and (max-width: 992px) {
   .navbar {
-    padding: 0 15px;
+    padding: 0;
   }
-  
+
   .nav_menus ul {
-    gap: 1.5rem;
+    gap: 0;
     font-size: medium;
   }
-  
+
+  .nav_menus ul li {
+    margin: 0 3px;
+  }
+
   .nav_rightside {
-    gap: 1.5rem;
+    gap: 0;
+  }
+
+  .nav_rightside li {
+    margin: 0 3px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .mobile_menu_toggle {
     display: block;
     cursor: pointer;
+    margin: 0;
   }
 
   .nav_menus {
@@ -136,17 +154,24 @@
     transition: height 0.3s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
+    margin: 0;
+    padding: 0;
   }
 
   .nav_menus.active {
-    height: auto;
+    /* height: auto; */
   }
 
   .nav_menus ul {
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-    gap: 1.5rem;
+    padding: 10px 0;
+    gap: 0;
+    margin: 0;
+  }
+
+  .nav_menus ul li {
+    margin: 5px 0;
   }
 
   .nav_rightside {
@@ -157,12 +182,13 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 5px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-100%);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 99;
+    margin: 0;
   }
 
   .nav_rightside.active {
@@ -171,36 +197,46 @@
   }
 
   .nav_rightside li {
-    margin: 0 15px;
+    margin: 0 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .navbar {
     height: 10vh;
-    padding: 0 15px;
+    padding: 0 10px;
   }
-  
+
   .nav_left_side img {
     height: 10vh;
     max-height: 50px;
+    margin: 0;
   }
-  
+
   .nav_menus {
     top: 10vh;
   }
-  
+
   .nav_menus ul {
-    padding: 15px 0;
-    gap: 1.2rem;
+    padding: 10px 0;
+    gap: 0;
     font-size: 16px;
+    margin: 0;
   }
-  
+
+  .nav_menus ul li {
+    margin: 3px 0;
+  }
+
   .nav_rightside {
     top: calc(10vh + 220px);
-    gap: 1.5rem;
+    gap: 0;
   }
-  
+
+  .nav_rightside li {
+    margin: 0 5px;
+  }
+
   .nav_rightside li svg {
     width: 25px;
     height: 25px;
@@ -210,6 +246,7 @@
 @media screen and (max-width: 320px) {
   .nav_left_side img {
     max-height: 40px;
+    margin: 0;
   }
 
   .mobile_menu_toggle svg {
@@ -218,12 +255,20 @@
   }
 
   .nav_menus ul {
-    gap: 1rem;
+    gap: 0;
     font-size: 14px;
   }
 
+  .nav_menus ul li {
+    margin: 2px 0;
+  }
+
   .nav_rightside {
-    gap: 1rem;
+    gap: 0;
+  }
+
+  .nav_rightside li {
+    margin: 0 3px;
   }
 
   .nav_rightside li svg {
