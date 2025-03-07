@@ -1,7 +1,7 @@
 import React from "react";
 import "../Projects/Projects.css";
 // import thomsoncasa from "../../assets/ThomsonCasa.jpg";
-import zaitoon from "../../assets/Zaitoon.jpg";
+import zaitoon from "../../assets/zaitoon.jpg";
 // import thottam from "../../assets/thottam.jpeg";
 import interenationalconventioncenter from "../../assets/international_convention_center.jpg";
 import dayahospital from "../../assets/daya_hospital.jpg";

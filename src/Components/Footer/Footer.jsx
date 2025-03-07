@@ -3,14 +3,15 @@ import "../Footer/Footer.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import earthcraftlogo from "../../assets/earthcraftlogo.png";
+// import earthcraftlogo from "../../assets/earthcraftlogo.png";
+import footerlogo from "../../assets/footerlogo_bg.png";
 
 const Footer = () => {
   return (
     <div className="footer_container">
       <div className="footer_content">
         <div className="footer_logo">
-          <img src={earthcraftlogo} alt="Earthcraft Logo" />
+          <img src={footerlogo} alt="Earthcraft Logo" />
         </div>
         
         <div className="footer_contact">

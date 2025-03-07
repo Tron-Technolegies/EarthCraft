@@ -18,14 +18,11 @@ const Contact = () => {
     e.preventDefault();
     const { name, email, phone, message } = formData;
 
-    const phoneNumber = "+919139711107";
+    const phoneNumber = "918943626262";
     const whatsappMessage = `Hello, I want to contact you!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
-
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      whatsappMessage
-    )}`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappURL, "_blank");
-
+    
     setFormData({
       name: "",
       email: "",
