@@ -3,10 +3,10 @@ import "../WhatsApp/WhatsApp.css";
 import whatsapplogo from "../../assets/whatsapp_logo.png";
 
 const WhatsApp = () => {
-  const phoneNumber = "+919539711107";
+  const phoneNumber = "918943626262";
   
   const handleWhatsAppClick = () => {
-    const message = "Hello";
+    const message = "Hello i would like to know more about your services.";
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
