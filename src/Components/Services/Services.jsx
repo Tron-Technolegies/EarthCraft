@@ -1,8 +1,9 @@
 import React from "react";
 import "../Services/Services.css";
-import interior from "../../assets/interior.jpg";
-import architecture from "../../assets/architecture.jpg";
-import contract from "../../assets/contract.jpg";
+// i
+import new_interior from "../../assets/new_interior.jpg";
+import new_architecture from "../../assets/new_architecture.jpg";
+import new_contract from "../../assets/new_contract.jpg";
 
 const Services = () => {
   return (
@@ -17,7 +18,7 @@ const Services = () => {
       
       <div className="various_services">
         <div className="service-item">
-          <img src={interior} alt="Interior design" />
+          <img src={new_interior} alt="Interior design" />
           <h2>Interior</h2>
           {/* <p>
             Proper arrangement of the interior always makes a house feel like a
@@ -27,7 +28,7 @@ const Services = () => {
           </p> */}
         </div>
         <div className="service-item">
-          <img src={architecture} alt="Architecture design" />
+          <img src={new_architecture} alt="Architecture design" />
           <h2>Architecture</h2>
           {/* <p>
             Managing and executing with the three E's of sustainability;
@@ -37,7 +38,7 @@ const Services = () => {
           </p> */}
         </div>
         <div className="service-item">
-          <img src={contract} alt="Contract services" />
+          <img src={new_contract} alt="Contract services" />
           <h2>Contract</h2>
           {/* <p>
             We have a proper team to get the best possible outcome out of our
