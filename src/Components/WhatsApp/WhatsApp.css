@@ -11,7 +11,7 @@
   width: 60px;
   height: 60px;
   border-radius: 20%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 10px rgba(255, 255, 255, 0.747); */
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   pointer-events: auto;
@@ -23,7 +23,7 @@
 
 .whatsapp-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3); */
 }
 
 .whatsapp-icon {
@@ -31,6 +31,7 @@
   height: 4px;
   object-fit: contain;
 }
+
 
 .whatsapp-button img {
   width: 80px;

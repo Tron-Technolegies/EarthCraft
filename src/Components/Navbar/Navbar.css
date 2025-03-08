@@ -1,4 +1,3 @@
-/* Navbar container */
 .navbar {
   height: 12vh;
   width: 100%;
@@ -10,16 +9,15 @@
   position: relative;
   padding: 0;
   box-sizing: border-box;
+  z-index: 1000;
 }
 
-/* Left side logo */
 .nav_left_side img {
   height: 12vh;
   max-height: 70px;
   margin: 0;
 }
 
-/* Navigation menu */
 .nav_menus ul {
   display: flex;
   gap: 0;
@@ -53,7 +51,6 @@
   transform: scaleX(1);
 }
 
-/* Menu links */
 .nav_menus ul li a {
   text-decoration: none;
   color: #6c6a3d;
@@ -70,7 +67,6 @@
   color: #6c6a3d;
 }
 
-/* Right side icons */
 .nav_rightside {
   display: flex;
   gap: 0;
@@ -88,7 +84,6 @@
   transform: translateY(-3px);
 }
 
-/* Mobile menu toggle button */
 .mobile_menu_toggle {
   display: none;
   z-index: 1000;
@@ -107,7 +102,6 @@
   margin: 0;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 992px) {
   .navbar {
     padding: 0;
@@ -135,6 +129,10 @@
   .navbar {
     justify-content: space-between;
     padding: 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 
   .mobile_menu_toggle {
@@ -159,7 +157,7 @@
   }
 
   .nav_menus.active {
-    /* height: auto; */
+    height: auto;
   }
 
   .nav_menus ul {
@@ -174,15 +172,16 @@
     margin: 5px 0;
   }
 
+  /* This is the key part for your button issue */
   .nav_rightside {
     position: fixed;
-    top: calc(12vh + 250px);
+    top: 12vh; /* Position right below the navbar */
     left: 0;
     width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
-    padding: 5px 0;
+    padding: 10px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-100%);
     opacity: 0;
@@ -192,12 +191,12 @@
   }
 
   .nav_rightside.active {
-    transform: translateY(-410%);
+    transform: translateY(0);
     opacity: 1;
   }
 
   .nav_rightside li {
-    margin: 0 10px;
+    display: none;
   }
 }
 
@@ -205,7 +204,6 @@
   .navbar {
     height: 10vh;
     padding: 0 10px;
-    
   }
 
   .nav_left_side img {
@@ -218,29 +216,8 @@
     top: 10vh;
   }
 
-  .nav_menus ul {
-    padding: 10px 0;
-    gap: 0;
-    font-size: 16px;
-    margin: 0;
-  }
-
-  .nav_menus ul li {
-    margin: 3px 0;
-  }
-
   .nav_rightside {
-    top: calc(10vh + 220px);
-    gap: 0;
-  }
-
-  .nav_rightside li {
-    margin: 0 5px;
-  }
-
-  .nav_rightside li svg {
-    width: 25px;
-    height: 25px;
+    top: 10vh; /* Adjust for smaller navbar */
   }
 }
 
@@ -254,26 +231,10 @@
     width: 25px;
     height: 25px;
   }
+}
 
-  .nav_menus ul {
-    gap: 0;
-    font-size: 14px;
-  }
-
-  .nav_menus ul li {
-    margin: 2px 0;
-  }
-
-  .nav_rightside {
-    gap: 0;
-  }
-
-  .nav_rightside li {
-    margin: 0 3px;
-  }
-
-  .nav_rightside li svg {
-    width: 20px;
-    height: 20px;
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 10vh;
   }
 }
