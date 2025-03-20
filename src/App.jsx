@@ -22,7 +22,7 @@ const App = () => {
       <section id="services"><Services /></section>
       
       <Testimonials />
-      <Faq />
+      {/* <Faq /> */}
       <section id="contact"><Contact /></section>
       <WhatsApp />
       <Footer />
