@@ -16,36 +16,42 @@ const Projects = () => {
       image: interenationalconventioncenter,
       location: "Kannur, Kerala",
       title: "International Convention Center",
+      url: "https://caletal.com/d2b-project/convention-centre/",
     },
     {
       id: 2,
       image: zaitoon,
       location: "Thrissur, Kerala",
       title: "Zaitoon Restaurant",
+      url: "https://caletal.com/d2b-project/zaitoon-restuarant-ongoing/",
     },
     {
       id: 3,
       image: dayahospital,
       location: "Thrissur, Kerala",
       title: "Daya Hospital",
+      url: "https://caletal.com/d2b-project/daya-hospital/",
     },
     {
       id: 4,
       image: premier_healths,
       location: "Thrissur, Kerala",
-      title: "Premier Healths",
+      title: "Premier Lab",
+      url: "https://caletal.com/d2b-project/premier-lab-ongoing/",
     },
     {
       id: 5,
       image: trinity7d,
       location: "Thrissur, Kerala",
       title: "Trinity 7D",
+      url: "https://caletal.com/d2b-project/trinity-7d-apartment-ongoing/",
     },
     {
       id: 6,
       image: swarga,
       location: "Thrissur, Kerala",
       title: "Swarga",
+      url: "https://caletal.com/d2b-project/thomsons-resort/",
     }
   ];
 
@@ -61,26 +67,33 @@ const Projects = () => {
       <div className="featured_products_content">
         <h2>Upcoming Projects</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ex
-          dignissimos eaque doloremque? Ex cupiditate tenetur pariatur sunt,
-          atque laudantium.
+          Explore our upcoming projects, featuring modern homes and innovative commercial spaces built for the future.
         </p>
         <button className="viewallproducts" onClick={() => window.location.href = 'https://caletal.com/d2b-projects/'}>
           SEE ALL PROJECTS
         </button>
       </div>
-      
 
       <div className="design-showcase">
         <div className="showcase-container">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="project-image-container">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="project-image"
-                />
+                {project.url ? (
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="project-image"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-image"
+                  />
+                )}
               </div>
               <div className="project-info">
                 <p className="project-location">{project.location}</p>
