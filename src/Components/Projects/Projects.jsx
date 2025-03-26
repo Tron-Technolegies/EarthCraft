@@ -59,15 +59,14 @@ const Projects = () => {
     <div className="projectssection">
       <div className="projectsection_main_content">
         <h2>
-          A Leading global construction company, building excellence and
-          transforming skylines since 2014.
+        Turning Spaces into Stories – Designed for Life, Built with Heart
         </h2>
       </div>
 
       <div className="featured_products_content">
         <h2>Upcoming Projects</h2>
         <p>
-          Explore our upcoming projects, featuring modern homes and innovative commercial spaces built for the future.
+        Explore our newest villas and interiors, designed to bring beauty, comfort, and style to life.
         </p>
         <button className="viewallproducts" onClick={() => window.location.href = 'https://caletal.com/d2b-projects/'}>
           SEE ALL PROJECTS
