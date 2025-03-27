@@ -1,12 +1,12 @@
 import React from "react";
 import "../About/About.css";
-import aboutsectionimage from "../../assets/aboutsectionimage.jpg";
+import aboutnew from "../../assets/about_new.jpg";
 
 const About = () => {
   return (
     <div className="aboutsection">
       <div className="about_section_left_side">
-        <img src={aboutsectionimage} alt="About Caletal developers" />
+        <img src={aboutnew} alt="About Caletal developers" />
       </div>
       
       <div className="about_section_right_side">
