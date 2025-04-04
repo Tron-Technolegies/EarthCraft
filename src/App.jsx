@@ -11,13 +11,20 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 
 import "../src/fonts.css";
+import NewClient from "./Components/NewClientsSteps/NewClient";
+import Branding from "./Components/Branding/Branding";
+
 
 const App = () => {
   return (
     <>
       <Navbar />
       <section id="hero"><Hero /></section>
+      <Branding/>
       <section id="projects"><Projects /></section>
+      <NewClient />
+      
+      
       <section id="about"><About /></section>
       <section id="services"><Services /></section>
       
@@ -26,6 +33,7 @@ const App = () => {
       <section id="contact"><Contact /></section>
       <WhatsApp />
       <Footer />
+     
     </>
   );
 };

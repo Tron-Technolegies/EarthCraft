@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
+  position: relative;
 }
 
 .about_section_left_side img {
@@ -22,6 +23,74 @@
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced stat display styling */
+.stat-display {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.stat-display:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.stat-display::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #cd8636, #6c6a3d);
+}
+
+.stat-number {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #cd8636;
+  margin: 0;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+}
+
+.stat-suffix {
+  font-size: 2.5rem;
+  vertical-align: top;
+  position: relative;
+  top: 0.5rem;
+  margin-left: 0.2rem;
+  color: #6c6a3d;
+  font-weight: 500;
+}
+
+.stat-description {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #555;
+  margin-top: 1rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.stat-description::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: #cd8636;
 }
 
 .about_section_right_side {
@@ -37,12 +106,12 @@
 .about_section_right_side h2 {
   font-size: 2.2rem;
   font-weight: 400;
-    color: #6c6a3d;
+  color: #6c6a3d;
   margin: 0;
 }
 
 .about_section_right_side p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   margin: 0;
 }
@@ -64,7 +133,7 @@
   color: white;
 }
 
-/* Media Queries  */
+/* Media Queries */
 @media screen and (max-width: 992px) {
   .aboutsection {
     padding: 3rem 1rem;
@@ -77,6 +146,10 @@
   .about_section_right_side p {
     font-size: 1rem;
   }
+  
+  .stat-number {
+    font-size: 4.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -85,7 +158,7 @@
     padding: 2rem 1rem;
   }
   
-  .about_section_left_side, 
+  .about_section_left_side,
   .about_section_right_side {
     width: 100%;
     padding: 1rem;
@@ -104,6 +177,18 @@
   .about_section_right_side button {
     width: auto;
   }
+  
+  .stat-display {
+    padding: 2.5rem;
+  }
+  
+  .stat-number {
+    font-size: 4rem;
+  }
+  
+  .stat-suffix {
+    font-size: 2.2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -113,5 +198,17 @@
   
   .about_section_right_side p {
     font-size: 0.9rem;
+  }
+  
+  .stat-display {
+    padding: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 3.5rem;
+  }
+  
+  .stat-suffix {
+    font-size: 2rem;
   }
 }

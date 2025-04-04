@@ -1,0 +1,175 @@
+.branding_main_container {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.branding_main_container h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #6c6a3d;
+  line-height: 1.3;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+
+.branding_main_container h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: #cd8636;
+  border-radius: 2px;
+}
+
+.rebranding-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 2rem;
+  gap: 3rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.branding-item {
+  width: 45%;
+  min-height: 35vh;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.branding-item:hover {
+  transform: translateY(-5px);
+}
+
+.old-brand,
+.new-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.old-brand h3,
+.new-brand h3 {
+  color: #555555;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  max-width: 180px;
+  flex-grow: 1;
+}
+
+.brand-logo {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+}
+.earthcraft-logo{
+  width: 200%;
+  height: 15vh;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+}
+
+.branding-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 2.2rem;
+  color: #4299e1;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .rebranding-container {
+    flex-direction: column;
+    gap: 2rem;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .branding-item {
+    width: 100%;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .branding_main_container h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    padding: 1.5rem 0;
+  }
+
+  .logo-container {
+    max-width: 220px; /* Increased logo size for mobile */
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .branding_main_container {
+    padding: 1rem 0.5rem;
+    min-height: auto;
+  }
+
+  .branding_main_container h2 {
+    font-size: 1.6rem;
+  }
+
+  .old-brand h3,
+  .new-brand h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo-container {
+    max-width: 200px; /* Slightly smaller for very small devices */
+    padding: 0.5rem;
+  }
+
+  .rebranding-container {
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
+}
