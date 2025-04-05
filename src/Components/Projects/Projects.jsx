@@ -3,7 +3,7 @@ import "../Projects/Projects.css";
 
 
 
-import zaitoon1 from "../../assets/zaitoon/Zaitoon.jpg";
+import zaitoon1 from "../../assets/zaitoon/zaitoon.jpg";
 import zaitoon2 from "../../assets/zaitoon/zaitoon_second.jpg";
 import zaitoon3 from "../../assets/zaitoon/zaitoon_third.jpg";
 
