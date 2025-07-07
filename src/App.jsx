@@ -20,7 +20,7 @@ const App = () => {
     <>
       <Navbar />
       <section id="hero"><Hero /></section>
-      <Branding/>
+      {/* <Branding/> */}
       <section id="projects"><Projects /></section>
       <NewClient />
       
